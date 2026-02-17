@@ -2,7 +2,8 @@
 SALARY PREDICTION WEB APPLICATION
 Using Streamlit and Keras 3
 """
-
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -449,4 +450,5 @@ st.markdown("""
         <p>© 2024 AI Salary Predictor | Powered by Keras & Streamlit</p>
         <p style='font-size: 0.8rem;'>For demonstration purposes only</p>
     </div>
+
 """, unsafe_allow_html=True)
